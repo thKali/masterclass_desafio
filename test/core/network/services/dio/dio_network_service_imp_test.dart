@@ -9,8 +9,6 @@ void main() {
     var response =
         await service.get('https://jsonplaceholder.typicode.com/todos');
 
-    print(response);
-
     expect(response.data, isA<List>());
   });
 }
